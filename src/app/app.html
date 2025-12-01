@@ -1,0 +1,23 @@
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <span class="navbar-brand mb-0 h1">🍑 Georgia Store</span>
+  </div>
+</nav>
+
+<!-- Product listing -->
+<div class="product-scroll">
+  <div class="products-container">
+    <h1 class="text-center mb-4">Our Products</h1>
+
+    <div class="product-row">
+      <div class="product-card" *ngFor="let p of products">
+        <img [src]="p.image" alt="Product">
+        <h2>{{ p.name }}</h2>
+        <p class="price">${{ p.price }}</p>
+        <p class="description">{{ p.description }}</p>
+        <button (click)="buy(p)">Buy 💰</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="scroll">  
+  
+  <div class="cards">  <!-- cards of products-->
+    
+    <div class="product-row">  <!--2 cards side by side -->
+      
+      <!-- Loop through products & ngFor: for loop-->
+      <div class="product-card" *ngFor="let p of products">
+        
+       
+        <img [src]="p.image" alt="Product"> <!--p: porduct-->
+        <h2>{{ p.name }}</h2>
+
+        <p class="price">${{ p.price }}</p>
+        <p class="description">{{ p.description }}</p>
+
+        <button (click)="buy(p)">Buy 💰</button>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
