@@ -1,0 +1,25 @@
+
+<div class ="review-page">
+    <h1 class="title">Review Order 👀 </h1>
+
+    <div class="review-card" *ngIf="product"><!--only show if that product is slected: comes from CommonModular in Ts-->
+        <img [src]="product.image" alt="product image"><!--in pg1.html-->
+
+        <!--Info-->
+        <h2>{{product.name}}</h2><!--in pg1.html-->
+        <p class ="price">${{product.price}}</p><!--in pg1.html-->
+        <p class="description">{{product.description}}</p>
+
+        <!--order button-->
+        <button class="btn-submit" (click)="submitOrder()">submit order 📦</button><!--calling method submit in ts commponent-->
+
+
+    </div>
+
+     <!--comfermation message-->
+    <div class="confirmation" *ngIf="message">
+        <h2>{{message}}</h2><!--calls message from method in ts-->
+
+    </div>
+
+</div>

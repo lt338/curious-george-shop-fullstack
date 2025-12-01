@@ -1,0 +1,111 @@
+/* === pg1 css page === */
+
+/* background:Yellow with black dots */
+.products-page {
+
+  background-color: #FFE44D;
+
+  background-image: radial-gradient(circle, black 20%, transparent 8%); /* css: dots pattern  */
+  background-size: 50px 50px; /* distance of each dot */
+  min-height: 100vh; /* dots fill whole page-> vh = viewport height, 100vh = full screen height */
+  
+  
+  padding: 70px 50px; /*  space around edges */
+}
+
+
+
+
+.title {
+  text-align: center; 
+  color: #343333; /* Dark gray, easier to read than pure black */
+  margin-bottom: 40px; /* Space below title */
+  font-size: 2.5rem; /* rem = responsive font size */
+  font-weight: bold;
+}
+
+/* bootstrap card */
+.card {
+  margin-bottom: 30px; /* Add space between cards */
+  min-height: 100px;
+  
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves card up ..px->nagative =up */
+}
+
+/* imgs */
+.card-img-top {
+  height: 250px; 
+  object-fit: contain; 
+  background-color: white; /* White background behind images */
+  padding: 15px;
+}
+
+/* body- Text area */
+.card-body {
+  background-color: white;
+  padding: 20px;
+}
+
+.card-title {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
+.price {
+  color: #8f6d2e; /* Orange-red for price */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  color: #666; /* Gray text */
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-family:monospace;
+}
+
+
+
+.btn-warning {/*  button:btn-warning = yellow button */
+  width: 100%; /* Full width of card */
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #333; 
+  color: #333; 
+}
+
+
+.btn-warning:hover {
+  background-color: #8a6930; /* chages the color when hovered */
+  transform: scale(1.05); /* Grows 5% bigger */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

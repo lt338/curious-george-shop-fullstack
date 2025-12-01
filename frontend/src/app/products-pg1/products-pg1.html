@@ -1,0 +1,39 @@
+
+<!-- pg1 -->
+
+<div class="products-page">
+  
+  <h1 class="title">Man with the Yellow Hat Shop 🐵🟡</h1>
+
+  <!-- Bootstrap "container" centers everything on the page-> conatiner: Holds all 4 product cards & -->
+  <div class="container">
+    
+
+    <!-- row stacks items horizontally (bootstap)-->
+    <div class="row">
+      
+      <!-- *ngFor: Angular loop - repeats this card for each product -->
+      <!-- "col-md-6"= half width so can get 2 cards per row -->
+      <div class="col-md-6" *ngFor="let product of products">
+        
+        <div class="card">
+          
+          
+          <!-- [src]: Angular uses product.image from your backend -->
+          <img [src]="product.image" class="card-img-top" alt="product image">
+
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5> <!--angular retraeves the data-->
+            <p class="price">${{ product.price }}</p>
+            <p class="description">{{ product.description }}</p>
+        
+            <!-- (click)="buy(product)" = When clicked run the buy() function from products-pg1.ts -->
+            <button class="btn btn-warning" (click)="buy(product)">Buy 🤑💰 </button> <!--BS:make button yellow (warning)-->
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
